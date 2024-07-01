@@ -7,6 +7,7 @@ const DashboardRoute = require("./routes/dashboard");
 const InfoBankRoute = require("./routes/infosbancaires");
 const ContratRoute = require("./routes/contrat");
 const PointageRoute = require("./routes/pointage");
+const BlogRoute = require("./routes/blogs");
 
 const app = express();
 
@@ -19,5 +20,6 @@ app.use("/RH/Dashboard", DashboardRoute);
 app.use("/RH/InfoBank", InfoBankRoute);
 app.use("/RH/Contrat", ContratRoute);
 app.use("/RH/Pointage", PointageRoute);
+app.use("/RH/Blog", BlogRoute);
 
 module.exports = app;
